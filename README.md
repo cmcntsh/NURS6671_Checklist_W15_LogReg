@@ -89,25 +89,35 @@ Hopefully, the statistics you calculate are more than just a collection of rando
 | What are the independent (or predictor) and dependent (or outcome) variables for the test, and what is the level of measurement for each one? |
 | IV:<br><br>DV:<br><br> |
 | What are the assumptions for the statistical test used? Do the data in the dataset meet those assumptions? If not, should an alternative test be selected or are any adjustments necessary to conduct a meaningful test? |
-| $\textcolor{red}{Update \ this \ section:}$ <br>sample is randomly selected from population<br>Observations are independent<br>data are normally distributed (residuals are normally distributed)<br>homogeneity of variance<br> |
-| NHST steps: |
-| These steps should be followed for each statistical test conducted as part of a study. |
+| $\textcolor{red}{Update \ this \ section:}$ <br>sample is randomly selected from population<br>Observations are independent<br>data are normally distributed (residuals are normally distributed)<br>linear relationship between predictor and outcome<br>homoscedasticity<br> |
+| NHST steps: (for the regression model overall) |
+| For regression analyses, these steps are essentially followed twice. Once for evaluating the model overall, and once for evaluating the model parameters individually.<br> |
 | 1. State the null and alternative hypothesis. |
-| $\textcolor{red}{Update \ this \ section:}$ <br>Interaction Effect:<br>H0: There is no interaction between Factor 1 and Factor 2<br><br>H1: There is an interaction between Factor 1 and Factor 2s<br><br>Main Effect #1:<br>H0: There is no difference between group means for Factor 1<br><br>H1: There is a difference between group means for Factor 1<br><br>Main Effect #2:<br>H0: There is no difference between group means for Factor 2<br><br>H1: There is a difference between group means for Factor 2<br><br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>H0: There is no difference between the null model (intercept only) and the model with predictors.<br><br>H1: There is a difference between the null model (intercept only) and the model with predictors.<br><br> |
 | 2. Establish the criteria for rejection (alpha level). |
 | Typically alpha = .05<br><br><br><br> |
 | 3. Calculate the test statistic. |
-| $\textcolor{red}{Update \ this \ section:}$ <br>Interaction effect:<br>F(df between, df within) = [F-value], p = [p-value]<br><br>Main effect #1:<br>F(df between, df within) = [F-value], p = [p-value]<br><br>Main effect #2:<br>F(df between, df within) = [F-value], p = [p-value]<br><br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>F(df 1, df 2) = [F-value], p = [p-value]<br><br> |
 | 4. Make a decision about the null hypothesis. (Reject or fail to reject?) |
-| $\textcolor{red}{Update \ this \ section:}$ <br>Interraction effect: reject or fail to reject H0?<br><br>Main effect #1: reject or fail to reject H0?<br><br>Main effect #2: reject or fail to reject H0?<br><br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>reject or fail to reject null model?<br><br> |
+| NHST steps: (for the model parameters) |
+| For regression analyses, these steps are essentially followed twice. Once for evaluating the model overall, and once for evaluating the model parameters individually.<br> |
+| 1. State the null and alternative hypothesis. |
+| $\textcolor{red}{Update \ this \ section:}$ <br>H0: b0 = 0<br><br>H1: b0 ≠ 0<br><br> |
+| 2. Establish the criteria for rejection (alpha level). |
+| Typically alpha = .05<br><br><br><br> |
+| 3. Calculate the test statistic. |
+| $\textcolor{red}{Update \ this \ section:}$ <br>t (standard error) = [t-value], p = [p-value]<br><br> |
+| 4. Make a decision about the null hypothesis. (Reject or fail to reject?) |
+| $\textcolor{red}{Update \ this \ section:}$ <br>reject or fail to reject H0?<br><br> |
 | Are any post-hoc or follow-up analyses needed? |
-| $\textcolor{red}{Update \ this \ section:}$ <br>Describe which post-hoc test(s) you run and your rationale for choosing the test(s).<br><br><br><br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>Regression diagnostics:<br><br>Model checking:<br>Autocorrelation test (Durbin-Watson) should NOT be significant<br>Collinearity statistics (VIF) should be under 5 and are problematic if 10 or higher<br> Normality test (Shapiro-Wilk) should not be significant, Q-Q plot of standardized residuals and theoretical quantiles should show normal distribution<br>Residual plots for predictors should be evenly distributed around 0. This helps show the linearity, independence, and homoscedasticity assumptions are met<br><br>Identify influential cases using Cook's distance: <br>Values for Cook's distance greater than 1 are potentially problematic, and it should be explored why those cases are different and how they impact the analysis.<br> |
 | What is the effect size? What is the interpretation of the effect size? |
-| $\textcolor{red}{Update \ this \ section:}$ <br>partial eta squared (.01-small, .06-medium, .14-large) = <br><br>or omega squared (.06-small, .14-medium, >.14-large) = <br><br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>Model overall:<br>R squared = <br><br>Each parameter:<br>standardized coefficient<br> |
 | Can a Bayes Factor be calculated? What is the interpretation of the Bayes Factor? |
 | B01 (null supported) or B10 (alternative supported) = (1-3 negligible evidence, 3-20 moderate evidence, 20-150 strong evidence, >150 very strong evidence)<br><br><br><br> |
 | How will you report results? |
-| $\textcolor{red}{Update \ this \ section:}$ <br>State the purpose and factors:<br><br>Report a significant interaction first:<br><br>Report main effects (each factor separately like one-way ANOVA):<br><br>Describe the nature of the interaction and the interaction plot:<br><br>Interpretation for the reader:<br><br>"A two-way ANOVA was conducted to examine the effects of exercise intensity (low, moderate, high) and diet type (low-carb, high-carb) on weight loss (kg).There was a significant interaction between exercise intensity and diet type, F(2, 57) = 4.56, p = .015, η²p = .138. Simple effects analysis revealed that at high exercise intensity, participants on a low-carb diet lost significantly more weight (M = 6.2 kg, SD = 1.3) than those on a high-carb diet (M = 4.1 kg, SD = 1.1), p = .003. However, at low and moderate exercise intensity, diet type had no significant effect on weight loss (p > .05).The main effect of exercise intensity was significant, F(2, 57) = 12.34, p < .001, η²p = .302, indicating that weight loss increased with exercise intensity. The main effect of diet type was not significant, F(1, 57) = 2.10, p = .152, η²p = .034.These findings suggest that the effectiveness of a low-carb diet in promoting weight loss depends on the level of exercise intensity."<br> |
+| $\textcolor{red}{Update \ this \ section:}$ A report about multiple regression should include these elements: Model summary (R squared, Adjusted R squared, F-statistics and p-value); Regression coefficients (Unstandardized coefficients B, standard error, t-value and p-value, standardized coefficients beta, confidence intervals); Interpretation of key findings; Assumption checks.<br>A multiple regression was performed to examine the effect of [predictors] on [outcome]. The overall model was statistically significant, F(df1, df2) = [F], p = [p], R² = [value], Adjusted R² = [value]. [List of significant predictors], with [interpret results]. Assumptions were [met/violated] based on [tests/checks].<br> |
 | **--------------------References--------------------** |
 | American Statistical Association. (2022, February 1, 2022). Ethical guidelines for statistical practice. Retrieved October 10 from https://www.amstat.org/your-career/ethical-guidelines-for-statistical-practice <br><br> Berman, N., & Gullíon, C. (2007). Working with a Statistician. Topics in Biostatistics, 489-503. <br><br> Booth, W. C., Colomb, G. G., Williams, J. M., Bizup, J., & Fitzgerald, W. T. (2016). The craft of research (Fourth ed.). University of Chicago Press. https://doi.org/10.7208/chicago/9780226239873.001.0001 <br><br> Field, A. (2018). Discovering statistics using IBM SPSS statistics (Fifth ed.). SAGE Publications, Inc. <br><br> Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Wadsworth, Cengage Learning. <br><br> Tabachnick, B. G., & Fidell, L. S. (2019). Using multivariate statistics (Seventh ed.). Pearson Education, Inc. |
 
