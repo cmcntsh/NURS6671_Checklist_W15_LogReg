@@ -111,9 +111,9 @@ Hopefully, the statistics you calculate are more than just a collection of rando
 | 4. Make a decision about the null hypothesis. (Reject or fail to reject?) |
 | $\textcolor{red}{Update \ this \ section:}$ <br>reject or fail to reject H0?<br><br> |
 | Are any post-hoc or follow-up analyses needed? |
-| $\textcolor{red}{Update \ this \ section:}$ <br>Regression diagnostics:<br><br>Model checking:<br>Autocorrelation test (Durbin-Watson) should NOT be significant<br>Collinearity statistics (VIF) should be under 5 and are problematic if 10 or higher<br> Normality test (Shapiro-Wilk) should not be significant, Q-Q plot of standardized residuals and theoretical quantiles should show normal distribution<br>Residual plots for predictors should be evenly distributed around 0. This helps show the linearity, independence, and homoscedasticity assumptions are met<br><br>Identify influential cases using Cook's distance: <br>Values for Cook's distance greater than 1 are potentially problematic, and it should be explored why those cases are different and how they impact the analysis.<br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>Regression diagnostics:<br><br>Model checking:<br>Collinearity statistics (VIF) should be under 5 and are problematic if 10 or higher<br><br>Identify influential cases using Cook's distance: <br>Values for Cook's distance greater than 1 are potentially problematic, and it should be explored why those cases are different and how they impact the analysis.<br><br>Classification Table (What percent are correctly identified for each category?)<br>Accuracy<br>Sensitivity<br>Specificity<br> |
 | What is the effect size? What is the interpretation of the effect size? |
-| $\textcolor{red}{Update \ this \ section:}$ <br>Model overall:<br>R squared = <br><br>Each parameter:<br>standardized coefficient<br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>Model overall:<br>Cox & Snell R squared = <br>Nagelkerke R squared<br>Each parameter:<br>odds ratio<br> |
 | Can a Bayes Factor be calculated? What is the interpretation of the Bayes Factor? |
 | B01 (null supported) or B10 (alternative supported) = (1-3 negligible evidence, 3-20 moderate evidence, 20-150 strong evidence, >150 very strong evidence)<br><br><br><br> |
 | How will you report results? |
