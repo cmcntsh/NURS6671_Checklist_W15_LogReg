@@ -97,7 +97,7 @@ Hopefully, the statistics you calculate are more than just a collection of rando
 | 2. Establish the criteria for rejection (alpha level). |
 | Typically alpha = .05<br><br><br><br> |
 | 3. Calculate the test statistic. |
-| $\textcolor{red}{Update \ this \ section:}$ <br>F(df 1, df 2) = [F-value], p = [p-value]<br><br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>Chi square(df) = [value], p = [p-value]<br><br> |
 | 4. Make a decision about the null hypothesis. (Reject or fail to reject?) |
 | $\textcolor{red}{Update \ this \ section:}$ <br>reject or fail to reject null model?<br><br> |
 | NHST steps: (for the model parameters) |
