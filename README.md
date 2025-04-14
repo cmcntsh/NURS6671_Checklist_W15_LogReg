@@ -89,7 +89,7 @@ Hopefully, the statistics you calculate are more than just a collection of rando
 | What are the independent (or predictor) and dependent (or outcome) variables for the test, and what is the level of measurement for each one? |
 | IV:<br><br>DV:<br><br> |
 | What are the assumptions for the statistical test used? Do the data in the dataset meet those assumptions? If not, should an alternative test be selected or are any adjustments necessary to conduct a meaningful test? |
-| $\textcolor{red}{Update \ this \ section:}$ <br>sample is randomly selected from population<br>Observations are independent<br>data are normally distributed (residuals are normally distributed)<br>linear relationship between predictor and outcome<br>homoscedasticity<br> |
+| $\textcolor{red}{Update \ this \ section:}$ <br>sample is randomly selected from population<br>Observations are independent<br>data are normally distributed (residuals are normally distributed)<br>linear relationship between predictor and log odds of the outcome (check significant interactions between continuous variables)<br>homoscedasticity<br>no multicollinearity<br>no "bad" outliers (influential cases)<br> |
 | NHST steps: (for the regression model overall) |
 | For regression analyses, these steps are essentially followed twice. Once for evaluating the model overall, and once for evaluating the model parameters individually.<br> |
 | 1. State the null and alternative hypothesis. |
